@@ -1,0 +1,8 @@
+/* .card {
+  margin: 0.2em;
+} */
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/images/bg-1.jpg");
+}

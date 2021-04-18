@@ -1,0 +1,61 @@
+#about_mission {
+  background: #50a9d8;
+  min-height: 300px;
+  display: block;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin: 0;
+  max-width: 100%;
+
+  text-align: center;
+}
+
+#about_mission h1 {
+  margin: auto;
+}
+
+#about_story h2 {
+  border-bottom: 1px solid #50a9d8;
+  border-bottom-width: 3px;
+  color: #50a9d8;
+  padding-bottom: 7px;
+}
+
+/* Carousel */
+.wrapper {
+  width: 100%;
+}
+.carousel {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+.carousel .card {
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+  line-height: 250px;
+  font-size: 90px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 40px;
+}
+.owl-dot {
+  height: 15px;
+  width: 45px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid #0072bc !important;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.owl-dot.active,
+.owl-dot:hover {
+  background: #0072bc !important;
+}

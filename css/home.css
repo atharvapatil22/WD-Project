@@ -1,0 +1,9 @@
+.m-main {
+  background-image: url("/images/bg-1.jpg");
+  min-height: 90vh;
+}
+
+h1 {
+  color: red;
+  font-weight: bolder;
+}

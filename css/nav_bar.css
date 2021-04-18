@@ -1,0 +1,13 @@
+.nav-brand {
+  color: white;
+  margin-left: 10%;
+}
+
+.navbar-nav {
+  margin-right: 15%;
+  margin-left: auto;
+}
+
+.nav-item {
+  margin: 0em 0.5em;
+}
