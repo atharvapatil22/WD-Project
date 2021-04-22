@@ -1,11 +1,22 @@
+/* BODY */
+
+body {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/images/bg-1.jpg"); */
+}
+
+/* MISSION */
 #about_mission {
-  background: #50a9d8;
+  background: linear-gradient(rgb(31, 105, 225), rgb(85, 221, 233));
+
   min-height: 300px;
   display: block;
   padding-top: 3em;
   padding-bottom: 3em;
   margin: 0;
   max-width: 100%;
+
+  color: white;
 
   text-align: center;
 }
@@ -14,6 +25,51 @@
   margin: auto;
 }
 
+.row {
+  justify-content: space-evenly;
+}
+
+.prod_card {
+  position: relative;
+  height: 250px;
+  width: 250px;
+
+  border: 1px solid white;
+  border-radius: 1em;
+  padding: 0;
+}
+
+.card_body {
+  position: absolute;
+  top: 150px;
+  bottom: 0px;
+
+  border: 1px solid transparent;
+  border-radius: 0.75em;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+}
+
+.card-text {
+  font-size: 25px;
+  color: white;
+}
+
+#card1,
+#card3,
+#card5 {
+  margin: 1em;
+}
+
+#card2 {
+  margin-left: 8em;
+}
+
+#card4 {
+  margin-right: 8em;
+}
+
+/*OUR STORY */
 #about_story h2 {
   border-bottom: 1px solid #50a9d8;
   border-bottom-width: 3px;
