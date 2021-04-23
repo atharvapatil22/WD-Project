@@ -183,6 +183,8 @@ window.onload = function(){
   DOM_card = document.getElementById('customize-card');
   DOM_card.children[0].src=pizzaObj.img;;
   DOM_card.children[1].children[0].textContent = pizzaObj.name;
+  CI_name = pizzaObj.name;
+  CI_img=pizzaObj.img;
 
   //Set DD size
   const size_dd = document.getElementById('size_dropdown');
@@ -205,6 +207,7 @@ function sizeDrop(){
   let x = document.getElementById('size_dropdown').value;
   const addPrice = document.getElementById('add_price');
 
+  CI_size = x;
   if(x=='Small')
     sizePriceVal = parseInt(pizzaObj.price_s);
   else if(x=='Medium')
@@ -221,12 +224,16 @@ function crustDrop(){
   let x = document.getElementById('crust_dropdown').value;
   let addPrice = document.getElementById('add_price');
 
-  if(x=='Classic')
+  CI_crust = x;
+  if(x=='Classic'){
     crustPriceModifier = 0;
-  else if(x=="Pan Pizza")
+  }
+  else if(x=="Pan Pizza"){
     crustPriceModifier = parseInt(pizzaObj.crust_pan);
-  else if(x=="Wheat Crust")
+  }
+  else if(x=="Wheat Crust"){
     crustPriceModifier = parseInt(pizzaObj.crust_wheat);
+  }
 
   totalPrice = sizePriceVal + crustPriceModifier + cheesePriceModifier;
   addPrice.innerHTML = "₹ "+totalPrice;
@@ -238,11 +245,41 @@ function cheeseCheck(){
   let addPrice = document.getElementById('add_price');
   
   if(x)
+  {
+    CI_ex_cheese = true;
     cheesePriceModifier = parseInt(pizzaObj.ex_cheese);
+  }
   else if(!x)
     cheesePriceModifier = 0;
 
   totalPrice = sizePriceVal + crustPriceModifier + cheesePriceModifier;
   addPrice.innerHTML = "₹ "+totalPrice;
 }
+
+// CART FUNCTIONALITY
+
+let cart_items = JSON.parse(window.sessionStorage.getItem("cart_items"));
+if(cart_items==null){
+  cart_items = [];
+}
+
+let CI_size="Small",CI_crust="Classic",CI_ex_cheese=false;
+let CI_name,CI_img;
+
+function addToCart(){
+
+  item_obj = {
+    img: CI_img,
+    name: CI_name,
+    size: CI_size,
+    crust: CI_crust,
+    extra_cheese: CI_ex_cheese,
+    price_each: totalPrice,
+    numItems:"1"
+  }
+
+  cart_items.push(item_obj);
+  window.sessionStorage.setItem("cart_items", JSON.stringify(cart_items)); 
+}
+
 

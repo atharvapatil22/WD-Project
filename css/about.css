@@ -1,19 +1,17 @@
 /* BODY */
 
 body {
-  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("/images/bg-1.jpg"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("/images/doodle_art_bg_black.jpg");
 }
 
 /* MISSION */
 #about_mission {
-  background: linear-gradient(rgb(31, 105, 225), rgb(85, 221, 233));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
 
-  min-height: 300px;
+  /* min-height: 250px; */
   display: block;
-  padding-top: 3em;
-  padding-bottom: 3em;
-  margin: 0;
+
   max-width: 100%;
 
   color: white;
@@ -21,8 +19,11 @@ body {
   text-align: center;
 }
 
-#about_mission h1 {
+#about_mission h2 {
   margin: auto;
+  /* padding-bottom: 5%;
+  padding-top: 5%; */
+  padding: 5%;
 }
 
 .row {
@@ -34,7 +35,7 @@ body {
   height: 250px;
   width: 250px;
 
-  border: 1px solid white;
+  border: 2px solid black;
   border-radius: 1em;
   padding: 0;
 }
@@ -70,6 +71,12 @@ body {
 }
 
 /*OUR STORY */
+#about_story {
+  background: white;
+  padding: 2em;
+  border-radius: 0.95em;
+}
+
 #about_story h2 {
   border-bottom: 1px solid #50a9d8;
   border-bottom-width: 3px;
@@ -87,14 +94,15 @@ body {
   padding: 0 30px;
 }
 .carousel .card {
-  color: #fff;
+  color: #000;
   text-align: center;
   margin: 20px 0;
   line-height: 250px;
   font-size: 90px;
   font-weight: 600;
-  border-radius: 10px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border: none;
+  /* border-radius: 10px; */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0);
 }
 
 .owl-dots {

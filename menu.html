@@ -38,6 +38,9 @@
             <a class="nav-link active" href="./menu.html">Menu</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="./cart.html">Cart</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="./about.html">About</a>
           </li>
           <li class="nav-item">
@@ -49,184 +52,211 @@
   
   </nav>
 
-  <div class="container">
-    <div class="row">
 
-      <!-- Card 1  -->
-      <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
-        <div id="card1" class="card" >
-          <img src="" class="card-img-top" alt="..." >
-          <div class="card-body my-card-body-container">
-            <h5 class="card-title" id="card1-head"></h5>
-            <p class="card-text"></p>
-            <a onclick="sendCardID(1);" class="btn btn-primary">Add to cart</a>
+  
+
+  <div id="main_body">
+  <div class="row">
+
+    <!-- MENU -->
+    <div class="container col-sm-11" id="menu-div" >
+      <div class="row">
+    
+        <!-- Card 1  -->
+        <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
+          <div id="card1" class="card">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body my-card-body-container">
+              <h5 class="card-title" id="card1-head"></h5>
+              <p class="card-text"></p>
+              <div class="btn-container">
+                <a onclick="sendCardID(1);" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- 2 -->
-      <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
-      <div  id="card2" class="card">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body my-card-body-container">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-          <a onclick="sendCardID(2);" class="btn btn-primary">Add to cart</a>
+    
+        <!-- 2 -->
+        <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
+          <div id="card2" class="card">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body my-card-body-container">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a onclick="sendCardID(2);" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-
-      <!-- 3 -->
-      <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
-      <div id="card3" class="card">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body my-card-body-container">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-          <a onclick="sendCardID(3);" class="btn btn-primary">Add to cart</a>
+    
+        <!-- 3 -->
+        <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
+          <div id="card3" class="card">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body my-card-body-container">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a onclick="sendCardID(3);" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-
-      <!-- 4 -->
-      <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
-      <div class="card" id="card4">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body my-card-body-container">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-          <a onclick="sendCardID(4);" class="btn btn-primary">Add to cart</a>
+    
+        <!-- 4 -->
+        <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
+          <div class="card" id="card4">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body my-card-body-container">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a onclick="sendCardID(4);" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-
-      <!-- 5 -->
-      <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
-      <div class="card" id="card5">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body my-card-body-container">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-          <a onclick="sendCardID(5);" class="btn btn-primary">Add to cart</a>
+    
+        <!-- 5 -->
+        <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
+          <div class="card" id="card5">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body my-card-body-container">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a onclick="sendCardID(5);" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-
-      <!-- Card 6  -->
-      <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
-      <div class="card" id="card6">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body my-card-body-container">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-          <a onclick="sendCardID(6);" class="btn btn-primary">Add to cart</a>
+    
+        <!-- Card 6  -->
+        <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
+          <div class="card" id="card6">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body my-card-body-container">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a onclick="sendCardID(6);" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-      
-      <!-- 7 -->
-      <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
-      <div class="card" id="card7">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body my-card-body-container">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-          <a onclick="sendCardID(7);" class="btn btn-primary">Add to cart</a>
+    
+        <!-- 7 -->
+        <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
+          <div class="card" id="card7">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body my-card-body-container">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a onclick="sendCardID(7);" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-
-      <!-- 8 -->
-      <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
-      <div class="card" id="card8">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body my-card-body-container">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-          <a onclick="sendCardID(8);" class="btn btn-primary">Add to cart</a>
+    
+        <!-- 8 -->
+        <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
+          <div class="card" id="card8">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body my-card-body-container">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a onclick="sendCardID(8);" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-      
-      <!-- 9 -->
-      <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
-      <div class="card" id="card9">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body my-card-body-container">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-          <a onclick="sendCardID(9);" class="btn btn-primary">Add to cart</a>
+    
+        <!-- 9 -->
+        <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
+          <div class="card" id="card9">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body my-card-body-container">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a onclick="sendCardID(9);" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-
-      <!-- CARD 10 -->
-      <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
-      <div class="card" id="card10">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body my-card-body-container">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-          <a onclick="sendCardID(10);" class="btn btn-primary">Add to cart</a>
+    
+        <!-- CARD 10 -->
+        <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
+          <div class="card" id="card10">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body my-card-body-container">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a onclick="sendCardID(10);" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-      
-      <!-- 11 -->
-      <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
-      <div class="card" id="card11">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body my-card-body-container">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-          <a onclick="sendCardID(11);" class="btn btn-primary">Add to cart</a>
+    
+        <!-- 11 -->
+        <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
+          <div class="card" id="card11">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body my-card-body-container">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a onclick="sendCardID(11);" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-
-      <!-- 12 -->
-      <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
-      <div class="card" id="card12">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body my-card-body-container">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-          <a onclick="sendCardID(12);" class="btn btn-primary">Add to cart</a>
+    
+        <!-- 12 -->
+        <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
+          <div class="card" id="card12">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body my-card-body-container">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a onclick="sendCardID(12);" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-      
-      <!-- 13 -->
-      <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
-      <div class="card" id="card13">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body my-card-body-container">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-          <a onclick="sendCardID(13);" class="btn btn-primary">Add to cart</a>
+    
+        <!-- 13 -->
+        <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
+          <div class="card" id="card13">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body my-card-body-container">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a onclick="sendCardID(13);" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-
-      <!-- 14 -->
-      <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
-      <div class="card" id="card14">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body my-card-body-container">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-          <a onclick="sendCardID(14);" class="btn btn-primary">Add to cart</a>
+    
+        <!-- 14 -->
+        <div class="m-card-container col-lg-3 col-md-4 col-sm-6">
+          <div class="card" id="card14">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body my-card-body-container">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a onclick="sendCardID(14);" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
         </div>
+    
+
+    
       </div>
-      </div>
-            
-
-
-
-
-
     </div>
+
+    <!-- CART -->
+
+    <!-- <div id="cart-div col-sm-1">
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptas tenetur deleniti officia alias consectetur impedit dignissimos quo earum rerum mollitia nulla dolor aliquid perferendis, similique quia iste? Enim, rem!</p>
+
+      <div id="cart-btn">
+      
+        <a href="#">
+          <img src="./images/cart_icon.png" alt="">
+        </a>
+      </div>
+
+    </div> -->
+
   </div>
+  </div>
+
+
+ 
   
   
   
