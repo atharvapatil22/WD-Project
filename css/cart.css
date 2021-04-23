@@ -3,6 +3,13 @@ body {
     url("/images/doodle_art_bg_black.jpg");
 }
 
+hr {
+  /* display: block; */
+  /* height: 1px; */
+  /* border: 0; */
+  border: 2px solid black;
+}
+
 @media only screen and (max-width: 768px) {
   #main-container {
     max-width: none;
@@ -14,8 +21,10 @@ body {
 
 .item-card {
   margin: 0.5%;
-  border: 1px solid black;
+  border: 1px solid transparent;
   padding: 2%;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 #item1 {
@@ -26,6 +35,8 @@ body {
 #item1 img {
   height: 100%;
   width: 100%;
+  border: 0.1px solid transparent;
+  border-radius: 0.5em;
 }
 
 #item2 p {
@@ -33,7 +44,7 @@ body {
   color: rgb(50, 50, 50);
 }
 
-#remove-btn {
+.remove-btn {
   background: red;
   border: none;
 
@@ -41,7 +52,7 @@ body {
   right: 2%;
 }
 @media only screen and (max-width: 576px) {
-  #remove-btn {
+  .remove-btn {
     position: relative;
     left: 1%;
   }
@@ -55,4 +66,13 @@ body {
   height: 70px;
   width: 100%;
   font-size: 1.5em;
+}
+
+.empty-tag {
+  min-height: 300px;
+  text-align: center;
+
+  margin-top: 20%;
+
+  color: rgb(172, 23, 23);
 }

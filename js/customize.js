@@ -258,9 +258,13 @@ function cheeseCheck(){
 
 // CART FUNCTIONALITY
 
-let cart_items = JSON.parse(window.sessionStorage.getItem("cart_items"));
-if(cart_items==null){
+
+let cart_items;
+if(window.sessionStorage.getItem('cart_items')==null){
   cart_items = [];
+} 
+else{
+  cart_items = JSON.parse(sessionStorage.getItem('cart_items'));
 }
 
 let CI_size="Small",CI_crust="Classic",CI_ex_cheese=false;
@@ -268,7 +272,7 @@ let CI_name,CI_img;
 
 function addToCart(){
 
-  item_obj = {
+  let item_obj = {
     img: CI_img,
     name: CI_name,
     size: CI_size,
@@ -280,6 +284,8 @@ function addToCart(){
 
   cart_items.push(item_obj);
   window.sessionStorage.setItem("cart_items", JSON.stringify(cart_items)); 
+
+    alert("Added to Cart");
 }
 
 

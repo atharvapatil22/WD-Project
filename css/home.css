@@ -1,9 +1,41 @@
-.m-main {
-  background-image: url("/images/bg-1.jpg");
-  min-height: 90vh;
+body {
+  /* Responsive for full image */
+
+  /* background-image: url(../images/home_bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646; */
+
+  /* Doodle bg */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("/images/doodle_art_bg_black.jpg");
+  min-height: 100vh;
+}
+
+img {
+  height: 20rem;
+  width: 20rem;
+
+  display: block;
+  margin: auto;
+}
+
+.card {
+  justify-content: center;
+  justify-items: center;
+  width: 35rem;
 }
 
 h1 {
-  color: red;
-  font-weight: bolder;
+  text-align: center;
+}
+
+#card2 {
+  min-width: 100vw;
+}
+
+body {
+  font-family: Lato;
 }

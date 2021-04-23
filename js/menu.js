@@ -108,6 +108,8 @@ window.onload = function(){
 function sendCardID(num){
 
   window.location.href = './customize.html?cardID='+num;
+
+
 }
 
 // cardsArray.push(document.getElementById('card1'));

@@ -123,3 +123,7 @@ body {
 .owl-dot:hover {
   background: #0072bc !important;
 }
+
+body {
+  font-family: Lato;
+}

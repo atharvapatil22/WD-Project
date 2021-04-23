@@ -1,19 +1,12 @@
-tasks:
-
 home:
-logo,tagline, offers
+offers
 
 contact us:
 backend 
 
 menu:
-customize and add to cart option.
-when something is added to cart give a popup
+give direct add to cart option.
 
 cart:
-in navbar add cicrle with no of items
-~~50%+
+in navbar fix cicrle with no of items
 
-
-overall:
-font styling, animate cards
