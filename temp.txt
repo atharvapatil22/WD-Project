@@ -1,12 +1,13 @@
 home:
-offers
+modify home
+actually implement the offers
 
 contact us:
-backend 
+backend
 
 menu:
 give direct add to cart option.
+add veg and non veg logo
 
 cart:
-in navbar fix cicrle with no of items
 

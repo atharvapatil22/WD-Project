@@ -1,6 +1,19 @@
 cart_items = JSON.parse(window.sessionStorage.getItem("cart_items"));
 
 window.onload = function(){
+  // CART BUBBLE
+  let Cart_Li = document.getElementById("cart-li");
+  let cart_items = JSON.parse(sessionStorage.getItem('cart_items'));
+  let l;
+  if(cart_items==null || cart_items.length==0){
+    l=0;
+  }
+  else{
+    l = cart_items.length;
+  }
+  Cart_Li.children[1].innerHTML = "&nbsp;"+l+"&nbsp;";
+
+  // MAIN
   let Cart = document.getElementById("cart_list");
   let subTotal=0,tax,total;
 
@@ -62,6 +75,8 @@ window.onload = function(){
     tax = (0.18) * subTotal;
     total = tax+ subTotal;
 
+    // console.log(subTotal,tax,total)
+
     Cart.innerHTML += `
       <div class="card item-card .container">
         <p id="end-card">
@@ -91,6 +106,17 @@ function order_place(){
 
   Cart.innerHTML="<h1 class='empty-tag'>CART IS EMPTY! <br>Add something from the Menu<h1>";
 
+    // CART BUBBLE
+  let Cart_Li = document.getElementById("cart-li");
+  let cart_itms = JSON.parse(sessionStorage.getItem('cart_items'));
+  let l;
+  if(cart_itms==null || cart_itms.length==0){
+    l=0;
+  }
+  else{
+    l = cart_itms.length;
+  }
+  Cart_Li.children[1].innerHTML = "&nbsp;"+l+"&nbsp;";
 
 }
 
@@ -150,8 +176,8 @@ function remove(num){
           `
     }
 
-          tax = (0.18) * subTotal;
-      total = tax+ subTotal;
+      tax = (0.18) * subTotal;
+      total = tax + subTotal;
 
       Cart.innerHTML += `
         <div class="card item-card .container">
@@ -167,5 +193,17 @@ function remove(num){
         </div>
       `
   }
+
+  // CART BUBBLE
+  let Cart_Li = document.getElementById("cart-li");
+  let cart_itms = JSON.parse(sessionStorage.getItem('cart_items'));
+  let l;
+  if(cart_itms==null || cart_itms.length==0){
+    l=0;
+  }
+  else{
+    l = cart_itms.length;
+  }
+  Cart_Li.children[1].innerHTML = "&nbsp;"+l+"&nbsp;";
 }
 

@@ -11,7 +11,8 @@ const pizzaList = [
     price_l:"325",
     crust_pan:"25",
     crust_wheat:"35",
-    ex_cheese:"70"
+    ex_cheese:"70",
+    category : "budget_veg"
   },
   {
     name:"Cheese n Tomato",
@@ -22,7 +23,8 @@ const pizzaList = [
     price_l:"325",
     crust_pan:"25",
     crust_wheat:"35",
-    ex_cheese:"70"
+    ex_cheese:"70",
+    category : "budget_veg"
   },
   {
     name:"Farmhouse",
@@ -33,7 +35,8 @@ const pizzaList = [
     price_l:"325",
     crust_pan:"25",
     crust_wheat:"35",
-    ex_cheese:"70"
+    ex_cheese:"70",
+    category : "budget_veg"
   },
   {
     name:"Peppy Paneer",
@@ -44,7 +47,8 @@ const pizzaList = [
     price_l:"325",
     crust_pan:"25",
     crust_wheat:"35",
-    ex_cheese:"70"
+    ex_cheese:"70",
+    category : "budget_veg"
   },
 
   // Expensive Pizzas veg
@@ -57,7 +61,8 @@ const pizzaList = [
     price_l:"425",
     crust_pan:"45",
     crust_wheat:"55",
-    ex_cheese:"100"
+    ex_cheese:"100",
+    category : "prem_veg"
   },
   {
     name:"Deluxe Veggie",
@@ -68,7 +73,8 @@ const pizzaList = [
     price_l:"425",
     crust_pan:"45",
     crust_wheat:"55",
-    ex_cheese:"100"
+    ex_cheese:"100",
+    category : "prem_veg"
   },
   {
     name:"Veg Extravaganza",
@@ -79,7 +85,8 @@ const pizzaList = [
     price_l:"425",
     crust_pan:"45",
     crust_wheat:"55",
-    ex_cheese:"100"
+    ex_cheese:"100",
+    category : "prem_veg"
   },
   // Budget pizzas non-veg
   {
@@ -91,7 +98,8 @@ const pizzaList = [
     price_l:"400",
     crust_pan:"35",
     crust_wheat:"45",
-    ex_cheese:"70"
+    ex_cheese:"70",
+    category : "budget_nv"
   },
   {
     name:"Chicken Fiesta",
@@ -102,7 +110,8 @@ const pizzaList = [
     price_l:"400",
     crust_pan:"35",
     crust_wheat:"45",
-    ex_cheese:"70"
+    ex_cheese:"70",
+    category : "budget_nv"
   },
   {
     name:"Chicken Golden Delight",
@@ -113,7 +122,8 @@ const pizzaList = [
     price_l:"400",
     crust_pan:"35",
     crust_wheat:"45",
-    ex_cheese:"70"
+    ex_cheese:"70",
+    category : "budget_nv"
   },
   {
     name:"Chicken Dominator",
@@ -124,7 +134,8 @@ const pizzaList = [
     price_l:"400",
     crust_pan:"35",
     crust_wheat:"45",
-    ex_cheese:"70"
+    ex_cheese:"70",
+    category : "budget_nv"
   },
   // Expensive pizzas non-veg
   {
@@ -136,7 +147,8 @@ const pizzaList = [
     price_l:"450",
     crust_pan:"45",
     crust_wheat:"55",
-    ex_cheese:"100"
+    ex_cheese:"100",
+    category : "prem_nv"
   },
   {
     name: "Non Veg Supreme",
@@ -147,7 +159,8 @@ const pizzaList = [
     price_l:"450",
     crust_pan:"45",
     crust_wheat:"55",
-    ex_cheese:"100"
+    ex_cheese:"100",
+    category : "prem_nv"
   },
   {
     name: "Tandoori Chicken Tikka",
@@ -158,7 +171,8 @@ const pizzaList = [
     price_l:"450",
     crust_pan:"45",
     crust_wheat:"55",
-    ex_cheese:"100"
+    ex_cheese:"100",
+    category : "prem_nv"
   }
 ]
 
@@ -200,6 +214,18 @@ window.onload = function(){
   //Set extra cheese & total price
   document.getElementById('cheese-lb').innerHTML = pizzaObj.ex_cheese;
   document.getElementById('add_price').innerHTML = "₹ "+pizzaObj.price_s;
+
+  // CART BUBBLE
+  let Cart_Li = document.getElementById("cart-li");
+  let cart_items = JSON.parse(sessionStorage.getItem('cart_items'));
+  let l;
+  if(cart_items==null || cart_items.length==0){
+    l=0;
+  }
+  else{
+    l = cart_items.length;
+  }
+  Cart_Li.children[1].innerHTML = "&nbsp;"+l+"&nbsp;";
 
 }
 
@@ -285,7 +311,7 @@ function addToCart(){
   cart_items.push(item_obj);
   window.sessionStorage.setItem("cart_items", JSON.stringify(cart_items)); 
 
-    alert("Added to Cart");
+  alert("Added to Cart");
 }
 
 

@@ -17,10 +17,12 @@
       <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/nav_bar.css">
   <link rel="stylesheet" href="./css/home.css">
-  <script src="./js/cart_num.js"></script>
+  <script src="./js/home.js"></script>
 
   <title>Home</title>
 </head>
@@ -47,7 +49,7 @@
         </li>
         <li class="nav-item" id="cart-li">
           <a class="nav-link " href="./cart.html">Cart</a>
-          <p style="color: white;">&nbsp;3&nbsp;</p>
+          <p style="color: white;">&nbsp; &nbsp;</p>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./about.html">About</a>
@@ -63,10 +65,13 @@
 
 <div class="card container">
   <img src="./images/la_pizzeria_logo.jpg" alt="">
-  <h1>Welcome to La Pizzeria</h1>
+  <h1 id="tagline" style='  font-family: "Sail";font-size: 4em;'>Best in Town!</h1>
 </div>
-<div class="card" id="card2">
-  TODAYS OFFERs
+<br>
+<div class="card" id="card2" style="background: rgb(220, 49, 49);">
+  <h2 style="text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;"> <span id="offer_day">Sunday</span> Special Offer.<br>Enjoy a 15% off on all <span id="offer_span"></span> pizzas.</h2>
 </div>
 
 
