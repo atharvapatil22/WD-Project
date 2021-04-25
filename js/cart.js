@@ -80,11 +80,11 @@ window.onload = function(){
     Cart.innerHTML += `
       <div class="card item-card .container">
         <p id="end-card">
-          Sub total: &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;`+subTotal+`
+          Sub total: &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;₹ `+subTotal+`
           <br><br>
-          Tax (18%): &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`+tax+`
+          Tax (18%): &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹ `+tax+`
           <br><br>
-          Total: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`+total+`
+          Total: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹ `+total+`
           <br><br>
           <a onclick="order_place()" href="#" class="btn btn-primary">Place Order</a>
         </p>
@@ -182,11 +182,11 @@ function remove(num){
       Cart.innerHTML += `
         <div class="card item-card .container">
           <p id="end-card">
-            Sub total: &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;`+subTotal+`
+            Sub total: &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;₹ `+subTotal+`
             <br><br>
-            Tax (18%): &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`+tax+`
+            Tax (18%): &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹ `+tax+`
             <br><br>
-            Total: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`+total+`
+            Total: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹ `+total+`
             <br><br>
             <a onclick="order_place()" href="#" class="btn btn-primary">Place Order</a>
           </p>

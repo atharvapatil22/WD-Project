@@ -7,7 +7,7 @@ backend
 
 menu:
 give direct add to cart option.
-add veg and non veg logo
+add veg and non veg icon
 
 cart:
 

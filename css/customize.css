@@ -5,7 +5,7 @@
 body {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url("/images/doodle_art_bg_black.jpg");
+    url("../images/doodle_art_bg_black.jpg");
 }
 
 body {
