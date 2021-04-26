@@ -29,18 +29,15 @@ else if(day==2){
   OfferText="Premium Non-veg";
   OfferDay = "Tuesday"
 }
-console.log(day);
-console.log(Offer);
-console.log(OfferDay);
 
 window.sessionStorage.setItem("Offer", JSON.stringify(Offer));
 
 window.onload = function(){
-  offer_span = document.getElementById("offer_span");
-  offer_day = document.getElementById("offer_day")
+  // offer_span = document.getElementById("offer_span");
+  // offer_day = document.getElementById("offer_day")
 
-  offer_span.innerHTML = OfferText;
-  offer_day.innerHTML = OfferDay;
+  // offer_span.innerHTML = OfferText;
+  // offer_day.innerHTML = OfferDay;
 
   // CART BUBBLE
   let Cart_Li = document.getElementById("cart-li");
@@ -52,5 +49,6 @@ window.onload = function(){
   else{
     l = cart_items.length;
   }
+  console.log(l)
   Cart_Li.children[1].innerHTML = "&nbsp;"+l+"&nbsp;";
 }
