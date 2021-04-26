@@ -19,6 +19,13 @@
   <link rel="stylesheet" href="./css/nav_bar.css">
   <link rel="stylesheet" href="./css/contact_us.css">
   <script src="./js/cart_num.js"></script>
+  <script>
+    function submit(){
+      alert("Your Message has been recorded!");
+      window.location.href = './contact_us.html';
+
+    }
+  </script>
 
   <title>Contact Us</title>
 </head>
@@ -79,7 +86,7 @@
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="We are here to listen to you.." style="height:150px"></textarea>
 
-    <input type="submit" value="Submit">
+    <input type="submit" onclick="submit()" value="Submit">
 
     </form>
   </div>
